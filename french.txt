@@ -21,5 +21,3 @@
 
 #Idea 4: make a switch case for every translation
 
-print("Juan")
-input = input("Inserte Frase a traducir: \n")
