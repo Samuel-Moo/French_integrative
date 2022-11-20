@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo Bienvenue 
 echo febna
 read frase 
