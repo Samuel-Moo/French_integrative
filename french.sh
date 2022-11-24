@@ -1,7 +1,22 @@
 #!/bin/bash
 
-echo Bienvenue 
-echo febna
-read frase 
-echo Lo que dijiste fue $frase 
+
+#----IMPRIMIR BIENVENIDA----#
+echo "Bienvenido al traductor Francés-Español!"
+echo "inserte la frase a traducir aquí"
+
+#----LEEMOS INPUT----#
+read frase
+
+#----SWITCH CASE----#
+case $frase in 
+    1)
+    #echo "shinji-kun omedetou gosaimasu"
+    echo "Felicidades Shinji"
+    ;;
+    *)
+    echo "Subete al EVA shinji"
+    break
+    ;;
+esac 
 
