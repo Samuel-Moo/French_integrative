@@ -8,15 +8,19 @@ echo "inserte la frase a traducir aquí"
 #----LEEMOS INPUT----#
 read frase
 
-#----SWITCH CASE----#
-case $frase in 
-    1)
-    #echo "shinji-kun omedetou gosaimasu"
-    echo "Felicidades Shinji"
-    ;;
-    *)
-    echo "Subete al EVA shinji"
-    break
-    ;;
-esac 
+#----FOR LOOP PARA OBTENER CADA PALABRA INDIVIDUALMENTE----#
+for word in $frase 
+do 
+    #----SWITCH CASE----#
+    case $word in 
+        j’ai)
+        echo "j’ai"
+        break
+        ;;
+        *)
+        echo "Subete al EVA shinji"
+        break
+        ;;
+    esac
+done
 
