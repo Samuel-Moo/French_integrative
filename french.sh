@@ -3,7 +3,7 @@
 
 #----IMPRIMIR BIENVENIDA----#
 echo "Bienvenido al traductor Francés-Español!"
-echo "inserte la frase a traducir aquí"
+echo "Inserte la frase a traducir aquí"
 
 #----LEEMOS INPUT----#
 read frase
@@ -13,13 +13,32 @@ for word in $frase
 do 
     #----SWITCH CASE----#
     case $word in 
-        j’ai)
-        echo "j’ai"
-        break
+        j\'ai) 
+        case $word in 
+            voulu)
+            echo "Sujet: Je, Conjugaison: Passé composé Avoir Verbe:Vouloir"
+            break
+            ;;
+            pu)
+            echo "Sujet: Je, Conjugaison: Passé composé Avoir Verbe:Puvoir"
+            break
+            ;;
+        esac       
         ;;
+        as)
+        case $word in 
+            voulais)
+            echo "Sujet: Tu, Conjugaison: Passé composé AvoirVerbe:Vouloir"
+            break
+            ;;
+            pu)
+            echo "Sujet: Tu, Conjugaison: Passé composé Avoir Verbe:Puvoir"
+            break
+            ;;
+        esac
+        ;;     
         *)
-        echo "Subete al EVA shinji"
-        break
+        #echo "Subete al EVA shinji"
         ;;
     esac
 done
