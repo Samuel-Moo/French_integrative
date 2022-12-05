@@ -128,7 +128,19 @@ function sont {
 }
 
 function imparfait {
-    echo "a"
+    case $word in 
+        voulais)
+        counter_1=$counter - 2
+        case "${frase[counter_1]}" in 
+        je)
+        echo
+        ;;
+        tu)
+        echo
+        ;; 
+        esac
+        ;;
+    esac
 }
 
 function main {
