@@ -130,15 +130,276 @@ function sont {
 function imparfait {
     case $word in 
         voulais)
-        counter_1=$counter - 2
-        case "${frase[counter_1]}" in 
-        je)
-        echo
+        counter_1=$(($counter-2))
+            case "${frase[counter_1]}" in 
+            je)
+            echo "Sujet: Je, Conjugaison: Imparfait, Verbe: Vouloir"
+            exit
+            ;;
+            tu)
+            echo "Sujet: Tu, Conjugaison: Imparfait, Verbe: Vouloir"
+            exit
+            ;; 
+            esac
         ;;
-        tu)
-        echo
+        voulait)
+        echo "Sujet: Il/Elle/On, Conjugaison: Imparfait, Verbe: Vouloir"
+        exit
+        ;;
+        voulions)
+        echo "Sujet: Nous, Conjugaison: Imparfait, Verbe: Vouloir"
+        exit
+        ;;
+        vouliez)
+        echo "Sujet: Vous, Conjugaison: Imparfait, Verbe: Vouloir"
+        exit
+        ;;
+        voulaient)
+        echo "Sujet: Ils/Elles, Conjugaison: Imparfait, Verbe: Vouloir"
+        exit
+        ;;
+        pusse)
+        echo "Sujet: Je, Conjugaison: Imparfait, Verbe: Puvoir"
+        exit
+        ;;
+        pusses)
+        echo "Sujet: Tu, Conjugaison: Imparfait, Verbe: Puvoir"
+        exit
+        ;;
+        pût)
+        echo "Sujet: Il/Elle/On, Conjugaison: Imparfait, Verbe: Puvoir"
+        exit
+        ;;
+        pussions)
+        echo "Sujet: Nous, Conjugaison: Imparfait, Verbe: Puvoir"
+        exit
+        ;;
+        pussiez)
+        echo "Sujet: Vous, Conjugaison: Imparfait, Verbe: Puvoir"
+        exit
+        ;;
+        pussent)
+        echo "Sujet: Ils/Elles, Conjugaison: Imparfait, Verbe: Puvoir"
+        exit
+        ;;
+        devais)
+        counter_1=$(($counter-2))
+            case "${frase[counter_1]}" in 
+            je)
+            echo "Sujet: Je, Conjugaison: Imparfait, Verbe: Devoir"
+            exit
+            ;;
+            tu)
+            echo "Sujet: Tu, Conjugaison: Imparfait, Verbe: Devoir"
+            exit
+            ;; 
+            esac
+        ;;
+        devait)
+        echo "Sujet: Il/Elle/On, Conjugaison: Imparfait, Verbe: Devoir"
+        exit
+        ;;
+        devions)
+        echo "Sujet: Nous, Conjugaison: Imparfait, Verbe: Devoir"
+        exit
+        ;;
+        deviez)
+        echo "Sujet: Vous, Conjugaison: Imparfait, Verbe: Devoir"
+        exit
+        ;;
+        devaient)
+        echo "Sujet: Ils/Elles, Conjugaison: Imparfait, Verbe: Devoir"
+        exit
+        ;;
+        j\'étais)
+        echo "Sujet: Je, Conjugaison: Imparfait, Verbe: Être"
+        exit
+        ;;
+        étais)
+        echo "Sujet: Tu, Conjugaison: Imparfait, Verbe: Être"
+        exit
+        ;;
+        était)
+        echo "Sujet: Il/Elle/On, Conjugaison: Imparfait, Verbe: Être"
+        exit
+        ;;
+        étions)
+        echo "Sujet: Nous, Conjugaison: Imparfait, Verbe: Être"
+        exit
+        ;;
+        étiez)
+        echo "Sujet: Vous, Conjugaison: Imparfait, Verbe: Être"
+        exit
+        ;;
+        étaient)
+        echo "Sujet: Ils/Elles, Conjugaison: Imparfait, Verbe: Être"
+        exit
+        ;;
+        j\'avais)
+        echo "Sujet: Je, Conjugaison: Imparfait, Verbe: Avoir"
+        exit
+        ;;
+        avais)
+        echo "Sujet: Tu, Conjugaison: Imparfait, Verbe: Avoir"
+        exit
+        ;;
+        avait)
+        echo "Sujet: Il/Elle/On, Conjugaison: Imparfait, Verbe: Avoir"
+        exit
+        ;;
+        avions)
+        echo "Sujet: Nous, Conjugaison: Imparfait, Verbe: Avoir"
+        exit
+        ;;
+        aviez)
+        echo "Sujet: Vous, Conjugaison: Imparfait, Verbe: Avoir"
+        exit
+        ;;
+        avaient)
+        echo "Sujet: Ils/Elles, Conjugaison: Imparfait, Verbe: Avoir"
+        exit
+        ;;
+        j\'aimais)
+        echo "Sujet: Je, Conjugaison: Imparfait, Verbe: Aimer"
+        exit
+        ;;
+        aimais)
+        echo "Sujet: Tu, Conjugaison: Imparfait, Verbe: Aimer"
+        exit
+        ;;
+        aimait)
+        echo "Sujet: Il/Elle/On, Conjugaison: Imparfait, Verbe: Aimer"
+        exit
+        ;;
+        aimions)
+        echo "Sujet: Nous, Conjugaison: Imparfait, Verbe: Aimer"
+        exit
+        ;;
+        aimiez)
+        echo "Sujet: Vous, Conjugaison: Imparfait, Verbe: Aimer"
+        exit
+        ;;
+        aimaient)
+        echo "Sujet: Ils/Elles, Conjugaison: Imparfait, Verbe: Aimer"
+        exit
+        ;;
+        changeais)
+            counter_1=$(($counter-2))
+            case "${frase[counter_1]}" in 
+            je)
+            echo "Sujet: Je, Conjugaison: Imparfait, Verbe: Changer"
+            exit
+            ;;
+            tu)
+            echo "Sujet: Tu, Conjugaison: Imparfait, Verbe: Changer"
+            exit
+            ;; 
+            esac
+        ;;
+        changeait)
+        echo "Sujet: Il/Elle/On, Conjugaison: Imparfait, Verbe: Changer"
+        exit
+        ;;
+        changions)
+        echo "Sujet: Nous, Conjugaison: Imparfait, Verbe: Changer"
+        exit
+        ;;
+        changiez)
+        echo "Sujet: Vous, Conjugaison: Imparfait, Verbe: Changer"
+        exit
+        ;;
+        changeaient)
+        echo "Sujet: Ils/Elles, Conjugaison: Imparfait, Verbe: Changer"
+        exit
+        ;;
+        mangeais)
+        counter_1=$(($counter-2))
+            case "${frase[counter_1]}" in 
+            je)
+            echo "Sujet: Je, Conjugaison: Imparfait, Verbe: Manger"
+            exit
+            ;;
+            tu)
+            echo "Sujet: Tu, Conjugaison: Imparfait, Verbe: Manger"
+            exit
+            ;; 
+            esac
+        ;;
+        mangeait)
+        echo "Sujet: Il/Elle/On, Conjugaison: Imparfait, Verbe: Manger"
+        exit
         ;; 
-        esac
+        mangions)
+        echo "Sujet: Nous, Conjugaison: Imparfait, Verbe: Manger"
+        exit
+        ;;
+        mangiez)
+        echo "Sujet: Vous, Conjugaison: Imparfait, Verbe: Manger"
+        exit
+        ;;
+        mangieaient)
+        echo "Sujet: Ils/Elles, Conjugaison: Imparfait, Verbe: Manger"
+        exit
+        ;;
+        parlais)
+        counter_1=$(($counter-2))
+            case "${frase[counter_1]}" in 
+            je)
+            echo "Sujet: Je, Conjugaison: Imparfait, Verbe: Parler"
+            exit
+            ;;
+            tu)
+            echo "Sujet: Tu, Conjugaison: Imparfait, Verbe: Parler"
+            exit
+            ;; 
+            esac
+        ;;
+        parlait)
+        echo "Sujet: Il/Elle/On, Conjugaison: Imparfait, Verbe: Parler"
+        exit
+        ;;
+        parlions)
+        echo "Sujet: Nous, Conjugaison: Imparfait, Verbe: Parler"
+        exit
+        ;;
+        parliez)
+        echo "Sujet: Vous, Conjugaison: Imparfait, Verbe: Parler"
+        exit
+        ;;
+        parlaient)
+        echo "Sujet: Ils/Elles, Conjugaison: Imparfait, Verbe: Parler"
+        exit
+        ;;
+        restais)
+        counter_1=$(($counter-2))
+            case "${frase[counter_1]}" in 
+            je)
+            echo "Sujet: Je, Conjugaison: Imparfait, Verbe: Rester"
+            exit
+            ;;
+            tu)
+            echo "Sujet: Tu, Conjugaison: Imparfait, Verbe: Rester"
+            exit
+            ;; 
+            esac
+        ;;
+        restait)
+        echo "Sujet: Il/Elle/On, Conjugaison: Imparfait, Verbe: Rester"
+        exit
+        ;;
+        restions)
+        echo "Sujet: Nous, Conjugaison: Imparfait, Verbe: Rester"
+        exit
+        ;;
+        restiez)
+        echo "Sujet: Vous, Conjugaison: Imparfait, Verbe: Rester"
+        exit
+        ;;
+        restaient)
+        echo "Sujet: Ils/Elles, Conjugaison: Imparfait, Verbe: Rester"
+        exit
+        ;;
+        *)
         ;;
     esac
 }
@@ -196,8 +457,8 @@ done
 }
 
 #----IMPRIMIR BIENVENIDA----#
-echo "Bienvenido al traductor Francés-Español!"
-echo "Inserte la frase a traducir aquí"
+echo "Bienvenue au traducteur"
+echo "Insérez votre phrase ici"
 
 #----LEEMOS INPUT----#
 read -a frase
